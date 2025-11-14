@@ -1,0 +1,28 @@
+[project]
+name = "looky"
+version = "1.0.0"
+description = "High-Frequency Aware Diffusion Models for Practical Virtual Try-on"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate==1.11.0",
+    "albumentations==2.0.8",
+    "dask-jobqueue==0.8.1",
+    "datasets==4.4.0",
+    "diffusers==0.35.2",
+    "easy-dwpose",
+    "ipykernel==7.1.0",
+    "pillow==12.0.0",
+    "safetensors==0.6.2",
+    "scikit-image==0.25.2",
+    "supervision==0.26.1",
+    "torch==2.9.0",
+    "torch-fidelity==0.3.0",
+    "torchmetrics==1.8.2",
+    "torchvision==0.24.0",
+    "transformers==4.57.1",
+    "wandb==0.22.3",
+]
+
+[tool.uv.sources]
+easy-dwpose = { git = "https://github.com/yushin-ito/easy-dwpose.git" }
